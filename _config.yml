@@ -1,0 +1,15 @@
+title: Five Rocks Games
+url: https://fiverocksgames.github.io
+markdown: kramdown
+collections:
+  math_defender_journals:
+    output: true
+    sort_by: date
+defaults:
+  - scope:
+      path: ""
+      type: math_defender_journals
+    values:
+      layout: math-defender-journal
+exclude:
+  - README.md

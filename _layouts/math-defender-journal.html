@@ -1,0 +1,52 @@
+---
+layout: math-defender-default
+---
+<main class="wrap">
+  <article>
+    <p class="meta">{{ page.date | date: "%Y-%m-%d" }}{% if page.category %} · {{ page.category }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+
+    {% assign docs = site.math_defender_journals | where: "lang", page.lang | sort: "date" %}
+    {% assign found_current = false %}
+    {% assign previous_doc = nil %}
+    {% assign next_doc = nil %}
+    {% for doc in docs %}
+      {% if doc.url == page.url %}
+        {% assign found_current = true %}
+      {% elsif found_current and next_doc == nil %}
+        {% assign next_doc = doc %}
+      {% elsif found_current == false %}
+        {% assign previous_doc = doc %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="actions journal-nav">
+      {% if previous_doc %}<a class="button secondary" href="{{ previous_doc.url }}">← {{ previous_doc.title }}</a>{% endif %}
+      {% if page.lang == 'en' %}
+        <a class="button secondary" href="/games/math-defender/en/journals/">Journal index</a>
+      {% else %}
+        <a class="button secondary" href="/games/math-defender/journals/">글 목록</a>
+      {% endif %}
+      {% if next_doc %}<a class="button" href="{{ next_doc.url }}">{{ next_doc.title }} →</a>{% endif %}
+    </div>
+  </article>
+
+  <section class="nearby-journals">
+    <h2>{% if page.lang == 'en' %}Nearby entries{% else %}가까운 글{% endif %}</h2>
+    <div class="card-list compact-list">
+      {% assign nearby = docs | reverse %}
+      {% assign shown = 0 %}
+      {% for doc in nearby %}
+        {% if doc.url != page.url and shown < 4 %}
+          <a class="card" href="{{ doc.url }}">
+            <p class="meta">{{ doc.date | date: "%Y-%m-%d" }}</p>
+            <h3>{{ doc.title }}</h3>
+            <p class="summary">{{ doc.summary }}</p>
+          </a>
+          {% assign shown = shown | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</main>
