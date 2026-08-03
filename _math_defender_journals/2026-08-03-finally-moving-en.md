@@ -10,6 +10,12 @@ translation_url: /games/math-defender/journals/2026-08-03-finally-moving.html
 ---
 This time, something actually moves on the screen.
 
+![First playable combat prototype of Math Defender](/games/math-defender/assets/journals/2026-08-03/first-playable-combat-prototype.png)
+
+*Asset ID: J003-01*
+
+*The first playable combat prototype of Math Defender. Enemy movement, tower placement, and the battle UI work together for the first time.*
+
 Enemies follow a path.
 
 Placed defenses attack them.
