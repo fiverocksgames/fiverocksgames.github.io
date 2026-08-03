@@ -10,6 +10,12 @@ translation_url: /games/math-defender/en/journals/2026-08-03-finally-moving.html
 ---
 이번에는 진짜로 화면에서 움직이는 게 생겼다.
 
+![Math Defender 첫 플레이 가능한 전투 프로토타입](/games/math-defender/assets/journals/2026-08-03/first-playable-combat-prototype.png)
+
+*Asset ID: J003-01*
+
+*첫 플레이 가능한 전투 프로토타입. 적 이동, 시설 배치, 전투 UI가 하나로 연결된 첫 번째 버전이다.*
+
 적이 길을 따라 움직이고,
 
 방어 시설을 놓으면 공격하고,
