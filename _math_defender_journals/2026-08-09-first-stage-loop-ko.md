@@ -1,6 +1,6 @@
 ---
 title: 이번엔 진짜 한 바퀴 돈다
-date: 2026-08-09
+date: 2026-08-09 08:00:00 +0900
 lang: ko
 category: FIRST STABLE STAGE LOOP
 summary: 처음 연결한 Stage Loop에는 치명적인 구멍이 있었다. 다시 고치고 검증해서 이제는 실제로 처음부터 끝까지 한 바퀴 돈다.
