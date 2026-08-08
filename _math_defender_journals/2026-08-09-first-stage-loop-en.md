@@ -1,6 +1,6 @@
 ---
 title: This Time, It Really Makes a Full Loop
-date: 2026-08-09
+date: 2026-08-09 08:00:00 +0900
 lang: en
 category: FIRST STABLE STAGE LOOP
 summary: The first connected Stage Loop still had blocking holes. After another round of fixes and validation, the game can now actually complete one full stage from start to finish.
