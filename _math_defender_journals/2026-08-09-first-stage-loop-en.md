@@ -32,11 +32,11 @@ The intended structure was already clear:
 
 This time, I am also keeping actual screenshots of that flow.
 
-![Math Defender Problem phase difficulty and reward selection screen](/games/math-defender/assets/journals/2026-08-09/01-problem-phase.webp)
+![Math Defender Problem phase difficulty and reward selection screen](/games/math-defender/assets/journals/2026-08-09/01-problem-phase.png)
 
 *J006-01 · Problem phase. In the current prototype, the player chooses difficulty, time limit, and reward before solving the problems.*
 
-![Math Defender Scout phase enemy information screen](/games/math-defender/assets/journals/2026-08-09/02-scout-phase.webp)
+![Math Defender Scout phase enemy information screen](/games/math-defender/assets/journals/2026-08-09/02-scout-phase.png)
 
 *J006-02 · Scout phase. A minimal scouting screen shows enemy HP and movement speed before combat.*
 
@@ -70,7 +70,7 @@ the placement system,
 
 and the combat HUD.
 
-![Math Defender Preparation phase with the integrated combat board and placement grid](/games/math-defender/assets/journals/2026-08-09/03-preparation-phase.webp)
+![Math Defender Preparation phase with the integrated combat board and placement grid](/games/math-defender/assets/journals/2026-08-09/03-preparation-phase.png)
 
 *J006-03 · Preparation phase. The path, Spawn/Goal markers, 12-cell placement grid, and HUD from the combat prototype are now part of the full Stage Loop.*
 
@@ -96,7 +96,7 @@ and restart.
 
 This time it reached the end.
 
-![Math Defender Victory result screen after completing the full Stage Loop](/games/math-defender/assets/journals/2026-08-09/04-result-victory.webp)
+![Math Defender Victory result screen after completing the full Stage Loop](/games/math-defender/assets/journals/2026-08-09/04-result-victory.png)
 
 *J006-04 · Result phase. This capture shows a Victory after defeating all 10 enemies, with the stage ready to restart.*
 
