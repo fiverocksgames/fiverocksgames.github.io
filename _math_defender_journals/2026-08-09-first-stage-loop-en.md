@@ -30,6 +30,16 @@ The intended structure was already clear:
 
 > Problem → Scout → Preparation → Battle → Result
 
+This time, I am also keeping actual screenshots of that flow.
+
+![Math Defender Problem phase difficulty and reward selection screen](/games/math-defender/assets/journals/2026-08-09/01-problem-phase.webp)
+
+*J006-01 · Problem phase. In the current prototype, the player chooses difficulty, time limit, and reward before solving the problems.*
+
+![Math Defender Scout phase enemy information screen](/games/math-defender/assets/journals/2026-08-09/02-scout-phase.webp)
+
+*J006-02 · Scout phase. A minimal scouting screen shows enemy HP and movement speed before combat.*
+
 The problem was that Unity had its own interpretation of “connected.”
 
 The Scout UI controller lived on a panel GameObject that started inactive. That meant the controller never got the startup lifecycle calls it needed to subscribe to events. Later, when Scout ended, the next transition could simply fail.
@@ -60,6 +70,10 @@ the placement system,
 
 and the combat HUD.
 
+![Math Defender Preparation phase with the integrated combat board and placement grid](/games/math-defender/assets/journals/2026-08-09/03-preparation-phase.webp)
+
+*J006-03 · Preparation phase. The path, Spawn/Goal markers, 12-cell placement grid, and HUD from the combat prototype are now part of the full Stage Loop.*
+
 Restarting from the Result screen now reloads the scene completely so towers, enemies, and other leftover state do not leak into the next run.
 
 Then I played it from the beginning again.
@@ -81,6 +95,10 @@ see the Result screen,
 and restart.
 
 This time it reached the end.
+
+![Math Defender Victory result screen after completing the full Stage Loop](/games/math-defender/assets/journals/2026-08-09/04-result-victory.webp)
+
+*J006-04 · Result phase. This capture shows a Victory after defeating all 10 enemies, with the stage ready to restart.*
 
 All 20 Edit Mode tests passed, and the complete loop was also verified in Play Mode.
 
