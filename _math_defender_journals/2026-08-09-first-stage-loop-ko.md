@@ -32,11 +32,11 @@ Scout 다음에서 화면이 멈췄고,
 
 이번에는 이 흐름의 실제 화면도 같이 남겨둔다.
 
-![Math Defender Problem 단계의 난이도와 보상 선택 화면](/games/math-defender/assets/journals/2026-08-09/01-problem-phase.webp)
+![Math Defender Problem 단계의 난이도와 보상 선택 화면](/games/math-defender/assets/journals/2026-08-09/01-problem-phase.png)
 
 *J006-01 · Problem 단계. 현재 프로토타입에서는 문제 풀이 전에 난이도와 제한 시간, 보상을 선택한다.*
 
-![Math Defender Scout 단계의 적 정보 확인 화면](/games/math-defender/assets/journals/2026-08-09/02-scout-phase.webp)
+![Math Defender Scout 단계의 적 정보 확인 화면](/games/math-defender/assets/journals/2026-08-09/02-scout-phase.png)
 
 *J006-02 · Scout 단계. 전투에 들어가기 전에 적의 체력과 이동 속도를 확인하는 최소 정찰 화면이다.*
 
@@ -70,7 +70,7 @@ WaveSpawner,
 
 전투 HUD까지.
 
-![Math Defender Preparation 단계에 통합된 전투 보드와 배치 그리드](/games/math-defender/assets/journals/2026-08-09/03-preparation-phase.webp)
+![Math Defender Preparation 단계에 통합된 전투 보드와 배치 그리드](/games/math-defender/assets/journals/2026-08-09/03-preparation-phase.png)
 
 *J006-03 · Preparation 단계. 기존 전투 프로토타입의 경로, Spawn/Goal, 12칸 배치 Grid와 HUD가 전체 Stage Loop 안으로 들어왔다.*
 
@@ -96,7 +96,7 @@ Scout를 지나고,
 
 이번에는 끝까지 갔다.
 
-![Math Defender 전체 Stage Loop 완료 후 Victory 결과 화면](/games/math-defender/assets/journals/2026-08-09/04-result-victory.webp)
+![Math Defender 전체 Stage Loop 완료 후 Victory 결과 화면](/games/math-defender/assets/journals/2026-08-09/04-result-victory.png)
 
 *J006-04 · Result 단계. 이 캡처에서는 적 10개를 처치하고 Victory에 도달한 뒤 재시작할 수 있는 상태까지 확인된다.*
 
