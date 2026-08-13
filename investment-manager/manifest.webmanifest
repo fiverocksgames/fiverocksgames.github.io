@@ -1,0 +1,1 @@
+{"name":"Investment Manager","short_name":"Invest Manager","description":"Personal investment decision support system","start_url":"/investment-manager/","display":"standalone","background_color":"#f8fafc","theme_color":"#0f172a","lang":"en","scope":"/investment-manager/","icons":[{"src":"favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
