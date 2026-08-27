@@ -4,103 +4,101 @@
 
 ### Play. Think. Grow.
 
-**아이들이 실제로 즐기고 싶어 하는 교육 게임을 개발합니다.**
+**재미가 먼저인 교육 게임을 만듭니다.**
 
-🚧 **Building in Public**
+아이들이 스스로 다시 플레이하고 싶어 하는 게임 안에  
+수학·집중력·기억력 같은 학습 요소를 자연스럽게 녹여냅니다.
 
-[공식 웹사이트](https://fiverocksgames.github.io/) · [게임 둘러보기](https://fiverocksgames.github.io/#games) · [Math Defender 개발 일지](https://fiverocksgames.github.io/games/math-defender/journals/)
+[🌐 Website](https://fiverocksgames.github.io/) · [🎮 Games](https://fiverocksgames.github.io/#games) · [📝 Devlog](https://fiverocksgames.github.io/games/math-defender/journals/)
 
 </div>
 
 ---
 
-## About Five Rocks Games
+## Games
 
-Five Rocks Games는 학습 요소를 게임 플레이 안에 자연스럽게 녹여내는 인디 게임 프로젝트입니다.
+| Game | What it is | Status |
+|---|---|---|
+| **Math Fighter** | 빠른 계산과 전투를 결합한 수학 액션 게임 | 🚧 In Development · Android Demo |
+| **Math Defender** | 문제 풀이로 자원을 얻고 방어 전략을 세우는 수학 전략 게임 | 🚧 In Development |
+| **Math Rain** | 떨어지는 수학 문제를 제한 시간 안에 해결하는 브라우저 게임 | ✅ Playable Prototype |
+| **Memory Game** | 카드 위치를 기억하고 짝을 맞추는 집중력·기억력 게임 | ✅ Playable Prototype |
 
-문제집처럼 보이는 게임이 아니라, **먼저 재미있고 계속 플레이하고 싶은 게임**을 만드는 것을 목표로 합니다. 짧은 반복 플레이, 명확한 피드백, 전략과 도전을 통해 계산력·집중력·기억력이 자연스럽게 사용되도록 설계합니다.
+### Play & Explore
+
+- **Math Fighter** — [Project](https://fiverocksgames.github.io/games/math-fighter/) · [Android Demo](https://fiverocksgames.github.io/games/math-fighter/apk/math-fighter.apk)
+- **Math Defender** — [Project](https://fiverocksgames.github.io/games/math-defender/) · [Play](https://fiverocksgames.github.io/games/math-defender/play/) · [Devlog](https://fiverocksgames.github.io/games/math-defender/journals/)
+- **Math Rain** — [Project](https://fiverocksgames.github.io/games/math-rain/) · [Play](https://fiverocksgames.github.io/math-rain/)
+- **Memory Game** — [Project](https://fiverocksgames.github.io/games/memory-game/) · [Play](https://fiverocksgames.github.io/memory-game/)
+
+---
+
+## What We Build
+
+Five Rocks Games는 **문제집을 게임처럼 꾸미는 것**보다  
+**게임 자체가 재미있고, 그 플레이 과정에서 자연스럽게 배우는 경험**을 목표로 합니다.
 
 > We build games children genuinely enjoy, where learning becomes a natural part of play.
 
-현재 공개된 게임과 빌드는 완성품이라기보다, 실제 플레이를 통해 방향을 검증하고 개선하기 위한 **개발 중 데모와 프로토타입**입니다.
+현재 공개된 빌드는 완성품보다는 실제 플레이를 통해 방향을 검증하고 개선하는 **데모와 프로토타입**에 가깝습니다.
 
-## Games
+### Design Principles
 
-| Game | Description | Status | Links |
-|---|---|---|---|
-| **Math Fighter** | 빠른 계산과 전투 감각을 결합한 수학 액션 게임 | **In Development · Android Demo Available** | [Website](https://fiverocksgames.github.io/games/math-fighter/) · [Try Android Demo](https://fiverocksgames.github.io/games/math-fighter/apk/math-fighter.apk) |
-| **Math Defender** | 문제 풀이로 자원을 얻고 방어 전략을 세우는 수학 전략 게임 | **In Development** | [Website](https://fiverocksgames.github.io/games/math-defender/) · [Play](https://fiverocksgames.github.io/games/math-defender/play/) · [Devlog](https://fiverocksgames.github.io/games/math-defender/journals/) |
-| **Math Rain** | 떨어지는 수학 문제를 제한 시간 안에 해결하는 브라우저 게임 | **Playable Prototype** | [Website](https://fiverocksgames.github.io/games/math-rain/) · [Play](https://fiverocksgames.github.io/math-rain/) |
-| **Memory Game** | 카드 위치를 기억하고 짝을 맞추는 집중력·기억력 게임 | **Playable Prototype** | [Website](https://fiverocksgames.github.io/games/memory-game/) · [Play](https://fiverocksgames.github.io/memory-game/) |
+- **Fun first** — 학습보다 먼저 게임으로서 재미있어야 합니다.
+- **Learning through play** — 학습은 별도 과제가 아니라 플레이 행동 안에 존재해야 합니다.
+- **Clear feedback** — 플레이어가 자신의 선택과 결과를 바로 이해할 수 있어야 합니다.
+- **Small, playable steps** — 큰 계획보다 실제로 플레이할 수 있는 작은 결과를 꾸준히 만듭니다.
+- **Build in public** — 결과뿐 아니라 시행착오와 결정 과정도 기록합니다.
 
-## Current Development
+---
+
+## Currently Building
 
 ### Math Fighter
 
-Math Fighter는 현재 계속 개발 중입니다. 공개된 APK는 핵심 플레이와 인터페이스를 체험할 수 있는 **Android 데모 버전**이며, 완성된 출시 버전이 아닙니다.
+빠른 계산과 전투 감각을 하나의 흐름으로 연결하는 모바일 수학 액션 게임입니다.
+
+현재는:
 
 - 전투와 연산 플레이 흐름 개선
 - 난이도와 반복 플레이 구조 조정
 - 모바일 UX와 피드백 개선
 
+을 중심으로 개발하고 있습니다.
+
 ### Math Defender
 
-**문제 풀이 → 정찰 → 방어**로 이어지는 게임 루프를 중심으로, 수학 문제 풀이가 단순한 퀴즈가 아니라 전략을 위한 자원 획득 과정이 되도록 만들고 있습니다.
+**문제 풀이 → 정찰 → 방어**로 이어지는 전략 루프를 만들고 있습니다.
 
-- 수학 문제를 풀어 자원 획득
-- 적과 전장을 확인하는 정찰 단계
-- 방어 시설 배치와 업그레이드
-- 프로토타입부터 출시까지 개발 과정 공개
+수학 문제를 푸는 행위가 단순한 퀴즈가 아니라  
+다음 전략을 실행하기 위한 **자원 획득 과정**이 되도록 설계하는 것이 핵심입니다.
 
-[프로젝트 보기](https://fiverocksgames.github.io/games/math-defender/) · [개발 일지 읽기](https://fiverocksgames.github.io/games/math-defender/journals/)
+[Math Defender 프로젝트 보기](https://fiverocksgames.github.io/games/math-defender/) · [개발 일지 읽기](https://fiverocksgames.github.io/games/math-defender/journals/)
 
-### Math Rain & Memory Game
+---
 
-두 프로젝트는 브라우저에서 바로 체험할 수 있는 **플레이 가능한 프로토타입**입니다. 작은 게임 아이디어를 빠르게 구현하고, 실제 플레이 감각을 검증하기 위한 실험으로 운영하고 있습니다.
+## Tech
 
-## Technology
+`Unity` · `C#` · `WebGL` · `Android` · `GitHub Pages` · `Jekyll`
 
-- Unity
-- C#
-- WebGL
-- Android
-- GitHub Pages
-- Jekyll
+---
 
-## Repository Map
+## Public Repositories
 
-| Repository | Purpose | Visibility |
-|---|---|---|
-| [`fiverocksgames.github.io`](https://github.com/fiverocksgames/fiverocksgames.github.io) | 공식 웹사이트와 게임 랜딩 페이지 | Public |
-| [`math-fighter`](https://github.com/fiverocksgames/math-fighter) | Math Fighter 개발 프로젝트 | Private |
-| [`math-defender-source`](https://github.com/fiverocksgames/math-defender-source) | Math Defender 소스 프로젝트 | Private |
-| [`math-defender-archive`](https://github.com/fiverocksgames/math-defender-archive) | Math Defender 배포·보관 자료 | Private |
-| [`math-rain`](https://github.com/fiverocksgames/math-rain) | Math Rain 브라우저 프로토타입 | Public |
-| [`memory-game-source`](https://github.com/fiverocks-games/memory-game-source) | Memory Game 개발 소스 | Private |
-| [`memory-game`](https://github.com/fiverocksgames/memory-game) | Memory Game 브라우저 배포 | Public |
-
-## Roadmap
-
-- [x] Math Fighter Android 데모 공개
-- [ ] Math Fighter 핵심 플레이와 콘텐츠 확장
-- [x] Math Rain 브라우저 프로토타입 공개
-- [x] Memory Game 브라우저 프로토타입 공개
-- [ ] Math Defender 핵심 게임 루프 완성
-- [ ] Math Defender 플레이테스트와 밸런싱
-- [ ] 새로운 교육 게임 실험
-
-## Principles
-
-1. **Fun first** — 학습보다 먼저 게임으로서 재미있어야 합니다.
-2. **Learning through play** — 학습 요소는 별도 과제가 아니라 게임 행동 안에 존재해야 합니다.
-3. **Small, playable steps** — 큰 계획보다 플레이 가능한 작은 결과를 꾸준히 만듭니다.
-4. **Build in public** — 성공뿐 아니라 시행착오와 결정 과정도 기록합니다.
+- [**fiverocksgames.github.io**](https://github.com/fiverocksgames/fiverocksgames.github.io) — 공식 웹사이트와 게임 랜딩 페이지
+- [**math-rain**](https://github.com/fiverocksgames/math-rain) — Math Rain 브라우저 프로토타입
+- [**memory-game**](https://github.com/fiverocksgames/memory-game) — Memory Game 브라우저 버전
+- [**math-fighter**](https://github.com/fiverocksgames/math-fighter) — Math Fighter 공개 저장소
+- [**math-defender**](https://github.com/fiverocksgames/math-defender) — Math Defender 공개 저장소
+- [**game-hub**](https://github.com/fiverocksgames/game-hub) — 게임 허브
 
 ---
 
 <div align="center">
 
-**Five Rocks Games**
+### Five Rocks Games
+
+**Small games. Real play. Better learning.**
 
 [Website](https://fiverocksgames.github.io/) · [GitHub](https://github.com/fiverocksgames)
 
