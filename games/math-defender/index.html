@@ -9,3 +9,5 @@ description: 수학 문제 풀이와 전략 방어를 결합한 Math Defender의
 <section class="hero"><div class="wrap"><p class="meta">IN DEVELOPMENT</p><h1>Math Defender</h1><p>수학 문제를 풀어 자원을 얻고, 적을 정찰한 뒤 방어 전략을 세우는 게임을 만들고 있습니다. 이곳에는 완성된 결과뿐 아니라 설계, 시행착오, 프로토타입과 출시까지의 과정을 기록합니다.</p><div class="actions"><a class="button" href="/games/math-defender/play/">Play</a><a class="button secondary" href="/games/math-defender/journals/">개발 일지 읽기</a></div></div></section>
 <section class="section"><div class="wrap"><h2>최근 기록</h2><div class="card-list">{% assign docs = site.math_defender_journals | where: "lang", "ko" | sort: "date" | reverse %}{% for doc in docs limit:3 %}<a class="card" href="{{ doc.url }}"><p class="meta">{{ doc.date | date: "%Y-%m-%d" }}</p><h3>{{ doc.title }}</h3><p class="summary">{{ doc.summary }}</p></a>{% endfor %}</div></div></section>
 </main>
+
+<script src="/assets/i18n.js"></script>
