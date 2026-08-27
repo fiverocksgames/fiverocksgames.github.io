@@ -9,3 +9,5 @@ description: The development journey of Math Defender, a strategy defense game p
 <section class="hero"><div class="wrap"><p class="meta">IN DEVELOPMENT</p><h1>Math Defender</h1><p>We are building a game where players solve math problems to earn resources, scout incoming enemies, and plan a defense. This site records not only finished results, but also design decisions, failed attempts, prototypes, and the road to release.</p><div class="actions"><a class="button" href="/games/math-defender/en/play/">Play</a><a class="button secondary" href="/games/math-defender/en/journals/">Read the journal</a></div></div></section>
 <section class="section"><div class="wrap"><h2>Latest entries</h2><div class="card-list">{% assign docs = site.math_defender_journals | where: "lang", "en" | sort: "date" | reverse %}{% for doc in docs limit:3 %}<a class="card" href="{{ doc.url }}"><p class="meta">{{ doc.date | date: "%Y-%m-%d" }}</p><h3>{{ doc.title }}</h3><p class="summary">{{ doc.summary }}</p></a>{% endfor %}</div></div></section>
 </main>
+
+<script src="/assets/i18n.js"></script>
