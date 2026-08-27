@@ -105,6 +105,11 @@
       T("여러 조합을 시험하며 가장 큰 결과에 도전해 보세요.","Try different combinations and challenge yourself to reach the biggest result.","尝试不同组合，挑战最大的结果。","いろいろな組み合わせを試して、最大の結果に挑戦しましょう。","Prueba distintas combinaciones y busca el mayor resultado.","Essayez différentes combinaisons et visez le résultat maximal.","Teste combinações diferentes e busque o maior resultado.","Probiere verschiedene Kombinationen und strebe das größte Ergebnis an."),
       T("Make It Max 플레이","Play Make It Max","玩 Make It Max","Make It Max をプレイ","Jugar a Make It Max","Jouer à Make It Max","Jogar Make It Max","Make It Max spielen")
     ],
+    hub: [
+      T("웹에서 바로 플레이할 수 있는 게임들","Games you can play right in your browser","可直接在浏览器中游玩的游戏","ブラウザですぐ遊べるゲーム","Juegos para jugar directamente en el navegador","Des jeux à lancer directement dans le navigateur","Jogos para jogar direto no navegador","Spiele direkt im Browser"),
+      T("3 GAMES","3 GAMES","3 款游戏","3 GAMES","3 JUEGOS","3 JEUX","3 JOGOS","3 SPIELE"),
+      T("Five Rocks Games 홈페이지","Five Rocks Games Home","Five Rocks Games 主页","Five Rocks Games ホーム","Inicio de Five Rocks Games","Accueil Five Rocks Games","Página inicial Five Rocks Games","Five Rocks Games Startseite")
+    ],
     defender: [
       T("수학 문제를 풀어 자원을 얻고, 적을 정찰한 뒤 방어 전략을 세우는 게임을 만들고 있습니다. 이곳에는 완성된 결과뿐 아니라 설계, 시행착오, 프로토타입과 출시까지의 과정을 기록합니다.","We are building a game where players solve math problems to earn resources, scout incoming enemies, and plan a defense. This site records finished results as well as design decisions, experiments, prototypes, and the road to release.","我们正在制作一款通过解数学题获取资源、侦察敌人并制定防御策略的游戏。这里记录成品，也记录设计、尝试、原型到发布的过程。","数学問題を解いて資源を得て、敵を偵察し、防衛戦略を立てるゲームを制作しています。完成形だけでなく、設計、試行錯誤、プロトタイプ、リリースまでの過程も記録します。","Estamos creando un juego donde resolver problemas de matemáticas da recursos para explorar enemigos y preparar la defensa. Registramos resultados, diseño, pruebas, prototipos y el camino al lanzamiento.","Nous développons un jeu où les problèmes de maths permettent de gagner des ressources, repérer les ennemis et préparer la défense. Nous documentons aussi la conception, les essais, les prototypes et le chemin vers la sortie.","Estamos criando um jogo em que resolver problemas de matemática gera recursos para reconhecer inimigos e planejar a defesa. Registramos resultados, design, testes, protótipos e o caminho até o lançamento.","Wir entwickeln ein Spiel, in dem Matheaufgaben Ressourcen liefern, um Gegner auszukundschaften und die Verteidigung zu planen. Dokumentiert werden Ergebnisse, Design, Versuche, Prototypen und der Weg zum Release."),
       T("최근 기록","Latest entries","最新记录","最新の記録","Últimas entradas","Dernières entrées","Registros recentes","Neueste Einträge"),
@@ -123,6 +128,7 @@
     if (p.includes("/games/memory-game/")) return "memory";
     if (p.includes("/games/make-it-max/")) return "max";
     if (p.includes("/games/math-defender/") && (p.endsWith("/math-defender/") || p.endsWith("/math-defender/en/") || p.endsWith("/math-defender/index.html"))) return "defender";
+    if (p === "/game-hub/" || p === "/game-hub/index.html") return "hub";
     return null;
   }
 
@@ -180,7 +186,7 @@
   }
 
   let lang = localStorage.getItem("frg-lang");
-  if (!LANGS.some(([code]) => code === lang)) lang = normalizeBrowserLang(navigator.language);
+  if (!LANGS.some(([code]) => code === lang)) lang = location.pathname.includes("/games/math-defender/en/") ? "en" : normalizeBrowserLang(navigator.language);
   addPicker(lang);
   translateText(lang);
 })();
