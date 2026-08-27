@@ -31,7 +31,7 @@ Five Rocks Games는 학습 요소를 게임 플레이 안에 자연스럽게 녹
 | **Math Fighter** | 빠른 계산과 전투 감각을 결합한 수학 액션 게임 | **In Development · Android Demo Available** | [Website](https://fiverocksgames.github.io/games/math-fighter/) · [Try Android Demo](https://fiverocksgames.github.io/games/math-fighter/apk/math-fighter.apk) |
 | **Math Defender** | 문제 풀이로 자원을 얻고 방어 전략을 세우는 수학 전략 게임 | **In Development** | [Website](https://fiverocksgames.github.io/games/math-defender/) · [Play](https://fiverocksgames.github.io/games/math-defender/play/) · [Devlog](https://fiverocksgames.github.io/games/math-defender/journals/) |
 | **Math Rain** | 떨어지는 수학 문제를 제한 시간 안에 해결하는 브라우저 게임 | **Playable Prototype** | [Website](https://fiverocksgames.github.io/games/math-rain/) · [Play](https://fiverocksgames.github.io/math-rain/) |
-| **Memory Game** | 카드 위치를 기억하고 짝을 맞추는 집중력·기억력 게임 | **Playable Prototype** | [Website](https://fiverocksgames.github.io/games/memory-game/) · [Play](https://fiverocksgames.github.io/memory-game-play/) |
+| **Memory Game** | 카드 위치를 기억하고 짝을 맞추는 집중력·기억력 게임 | **Playable Prototype** | [Website](https://fiverocksgames.github.io/games/memory-game/) · [Play](https://fiverocksgames.github.io/memory-game/) |
 
 ## Current Development
 
@@ -76,8 +76,8 @@ Math Fighter는 현재 계속 개발 중입니다. 공개된 APK는 핵심 플�
 | [`math-defender-source`](https://github.com/fiverocksgames/math-defender-source) | Math Defender 소스 프로젝트 | Private |
 | [`math-defender-archive`](https://github.com/fiverocksgames/math-defender-archive) | Math Defender 배포·보관 자료 | Private |
 | [`math-rain`](https://github.com/fiverocksgames/math-rain) | Math Rain 브라우저 프로토타입 | Public |
-| [`memory-game-source`](https://github.com/fiverocksgames/memory-game-source) | Memory Game 소스 프로젝트 | Private |
-| [`memory-game-play`](https://github.com/fiverocksgames/memory-game-play) | Memory Game 브라우저 프로토타입 배포 | Public |
+| [`memory-game-source`](https://github.com/fiverocks-games/memory-game-source) | Memory Game 개발 소스 | Private |
+| [`memory-game`](https://github.com/fiverocksgames/memory-game) | Memory Game 브라우저 배포 | Public |
 
 ## Roadmap
 
