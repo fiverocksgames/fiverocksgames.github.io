@@ -1,5 +1,14 @@
 # FiveRocksGames brand assets
 
-Approved web copies for the public homepage. Canonical reusable source/provenance is maintained in the private `fiverocks-dev/assets` repository.
+Public website copies of the approved first-party brand set.
 
-Palette: #4DA3FF, #FFD166, #FF7B6B, #7BCB8B, #2E9C6A; dark navy #072243.
+Canonical source: private `fiverocks-dev/assets/branding/fiverocksgames/`.
+
+Final palette approved 2026-08-31:
+- #8CC63F lime green
+- #2F80ED bright blue
+- #FFC928 warm yellow
+- #FF4B3E coral red
+- #B45AC9 soft purple
+- #071B3E wordmark navy
+- #061B3C dark-surface navy

@@ -1,6 +1,6 @@
 <div align="center">
 
-# FIVE ROCKS GAMES
+# FiveRocksGames
 
 ### Play. Think. Grow.
 
@@ -35,7 +35,7 @@
 
 ## What We Build
 
-Five Rocks Games는 **문제집을 게임처럼 꾸미는 것**보다  
+FiveRocksGames는 **문제집을 게임처럼 꾸미는 것**보다  
 **게임 자체가 재미있고, 그 플레이 과정에서 자연스럽게 배우는 경험**을 목표로 합니다.
 
 > We build games children genuinely enjoy, where learning becomes a natural part of play.
@@ -96,7 +96,7 @@ Five Rocks Games는 **문제집을 게임처럼 꾸미는 것**보다
 
 <div align="center">
 
-### Five Rocks Games
+### FiveRocksGames
 
 **Small games. Real play. Better learning.**
 
