@@ -9,7 +9,7 @@
 아이들이 스스로 다시 플레이하고 싶어 하는 게임 안에  
 수학·집중력·기억력 같은 학습 요소를 자연스럽게 녹여냅니다.
 
-[🌐 Website](https://fiverocksgames.github.io/) · [🎮 Games](https://fiverocksgames.github.io/#games) · [📝 Devlog](https://fiverocksgames.github.io/games/math-defender/journals/)
+[🌐 Website](https://fiverocksgames.github.io/) · [🎮 Games](https://fiverocksgames.github.io/#games) · [📝 Devlog](https://fiverocksgames.github.io/math-defender/journals/)
 
 </div>
 
@@ -27,7 +27,7 @@
 ### Play & Explore
 
 - **Math Fighter** — [Project](https://fiverocksgames.github.io/games/math-fighter/) · [Android Demo](https://fiverocksgames.github.io/games/math-fighter/apk/math-fighter.apk)
-- **Math Defender** — [Project](https://fiverocksgames.github.io/games/math-defender/) · [Play](https://fiverocksgames.github.io/games/math-defender/play/) · [Devlog](https://fiverocksgames.github.io/games/math-defender/journals/)
+- **Math Defender** — [Project](https://fiverocksgames.github.io/games/math-defender/) · [Play](https://fiverocksgames.github.io/games/math-defender/play/) · [Devlog](https://fiverocksgames.github.io/math-defender/journals/)
 - **Math Rain** — [Project](https://fiverocksgames.github.io/games/math-rain/) · [Play](https://fiverocksgames.github.io/math-rain/)
 - **Memory Game** — [Project](https://fiverocksgames.github.io/games/memory-game/) · [Play](https://fiverocksgames.github.io/memory-game/)
 
@@ -73,7 +73,7 @@ FiveRocksGames는 **문제집을 게임처럼 꾸미는 것**보다
 수학 문제를 푸는 행위가 단순한 퀴즈가 아니라  
 다음 전략을 실행하기 위한 **자원 획득 과정**이 되도록 설계하는 것이 핵심입니다.
 
-[Math Defender 프로젝트 보기](https://fiverocksgames.github.io/games/math-defender/) · [개발 일지 읽기](https://fiverocksgames.github.io/games/math-defender/journals/)
+[Math Defender 프로젝트 보기](https://fiverocksgames.github.io/games/math-defender/) · [개발 일지 읽기](https://fiverocksgames.github.io/math-defender/journals/)
 
 ---
 
