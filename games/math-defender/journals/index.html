@@ -3,6 +3,9 @@ layout: math-defender-default
 title: 개발 일지
 lang: ko
 translation_url: /games/math-defender/en/journals/
-description: Math Defender 개발 일지 목록
+description: Math Defender 개발 일지 호환 안내
 ---
-<main><section class="hero"><div class="wrap"><p class="meta">DEVELOPMENT JOURNAL</p><h1>Math Defender 개발 일지</h1><p>최근 글부터 볼 수 있습니다. 각 글에는 게임을 만들면서 실제로 고민하고 결정한 과정이 담겨 있습니다.</p></div></section><section class="section"><div class="wrap"><div class="card-list">{% assign docs = site.math_defender_journals | where: "lang", "ko" | sort: "date" | reverse %}{% for doc in docs %}<a class="card" href="{{ doc.url }}"><p class="meta">{{ doc.date | date: "%Y-%m-%d" }}{% if doc.category %} · {{ doc.category }}{% endif %}</p><h2>{{ doc.title }}</h2><p class="summary">{{ doc.summary }}</p></a>{% endfor %}</div></div></section></main>
+<main>
+<section class="hero"><div class="wrap"><p class="meta">DEVELOPMENT JOURNAL</p><h1>Math Defender 개발 일지가 새 위치로 이동했습니다</h1><p>새 글과 전체 개발 기록은 Math Defender의 독립 공개 저널에서 이어집니다.</p><div class="actions"><a class="button" href="https://fiverocksgames.github.io/math-defender/journals/">새 개발 일지 열기</a></div></div></section>
+<section class="section"><div class="wrap"><h2>기존 링크 호환</h2><p>기존에 공유된 개별 개발 일지 URL과 historical screenshot asset은 호환성을 위해 이 사이트에 계속 유지합니다. 이 목록 페이지에는 신규 글을 중복 게시하지 않습니다.</p></div></section>
+</main>

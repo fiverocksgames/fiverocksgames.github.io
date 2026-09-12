@@ -3,6 +3,9 @@ layout: math-defender-default
 title: Development Journal
 lang: en
 translation_url: /games/math-defender/journals/
-description: Math Defender development journal
+description: Math Defender development journal compatibility page
 ---
-<main><section class="hero"><div class="wrap"><p class="meta">DEVELOPMENT JOURNAL</p><h1>Math Defender Development Journal</h1><p>Entries are listed newest first. They record the decisions, doubts, experiments, and actual work behind the game.</p></div></section><section class="section"><div class="wrap"><div class="card-list">{% assign docs = site.math_defender_journals | where: "lang", "en" | sort: "date" | reverse %}{% for doc in docs %}<a class="card" href="{{ doc.url }}"><p class="meta">{{ doc.date | date: "%Y-%m-%d" }}{% if doc.category %} · {{ doc.category }}{% endif %}</p><h2>{{ doc.title }}</h2><p class="summary">{{ doc.summary }}</p></a>{% endfor %}</div></div></section></main>
+<main>
+<section class="hero"><div class="wrap"><p class="meta">DEVELOPMENT JOURNAL</p><h1>The Math Defender journal has moved</h1><p>New entries and the full development journal now continue on the standalone Math Defender public journal.</p><div class="actions"><a class="button" href="https://fiverocksgames.github.io/math-defender/en/journals/">Open the new journal</a></div></div></section>
+<section class="section"><div class="wrap"><h2>Legacy link compatibility</h2><p>Previously shared individual journal URLs and historical screenshot assets remain available on this site for compatibility. New entries are not duplicated on this legacy index.</p></div></section>
+</main>
