@@ -1,0 +1,83 @@
+name: Publish Text vs Color PR28 Preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-text-vs-color-pr28.yml
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    name: Mirror verified PR28 preview
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_ROOT: "https://raw.githubusercontent.com/fiverocksgames/text-vs-color/main/preview/pr-28"
+      TARGET_DIR: "text-vs-color/preview/pr-28"
+      SOURCE_SHA: "d18f8d16603b4c5339959f4b40ef4ae39e75a7be"
+    steps:
+      - name: Check out Pages repository
+        uses: actions/checkout@v4
+
+      - name: Download verified deployment files
+        run: |
+          rm -rf /tmp/text-vs-color-pr28
+          mkdir -p /tmp/text-vs-color-pr28/assets
+          curl -L --fail --silent --show-error "$SOURCE_ROOT/DEPLOYMENT_PROVENANCE.json" -o /tmp/text-vs-color-pr28/DEPLOYMENT_PROVENANCE.json
+          curl -L --fail --silent --show-error "$SOURCE_ROOT/index.html" -o /tmp/text-vs-color-pr28/index.html
+          curl -L --fail --silent --show-error "$SOURCE_ROOT/assets/index-B6hmJRLE.css" -o /tmp/text-vs-color-pr28/assets/index-B6hmJRLE.css
+          curl -L --fail --silent --show-error "$SOURCE_ROOT/assets/index-CI9MhYnW.js" -o /tmp/text-vs-color-pr28/assets/index-CI9MhYnW.js
+
+      - name: Validate provenance and file hashes
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          root = pathlib.Path("/tmp/text-vs-color-pr28")
+          provenance = json.loads((root / "DEPLOYMENT_PROVENANCE.json").read_text(encoding="utf-8-sig"))
+          expected = {
+              "sourceRepository": "fiverocks-dev/text-vs-color",
+              "sourceCommit": "d18f8d16603b4c5339959f4b40ef4ae39e75a7be",
+              "pullRequest": 28,
+              "previewPath": "/preview/pr-28/",
+          }
+          for key, value in expected.items():
+              if provenance.get(key) != value:
+                  raise SystemExit(f"provenance mismatch for {key}: {provenance.get(key)!r}")
+          declared = {entry["path"]: entry["sha256"] for entry in provenance["files"]}
+          actual = {}
+          for path in root.rglob("*"):
+              if path.is_file() and path.name != "DEPLOYMENT_PROVENANCE.json":
+                  rel = path.relative_to(root).as_posix()
+                  if rel.endswith(".map"):
+                      raise SystemExit(f"source map prohibited: {rel}")
+                  actual[rel] = hashlib.sha256(path.read_bytes()).hexdigest()
+          if actual != declared:
+              raise SystemExit(f"hash mismatch: declared={declared} actual={actual}")
+          print("Verified deployment provenance and hashes")
+          PY
+
+      - name: Stage isolated Pages subtree
+        run: |
+          rm -rf "$TARGET_DIR"
+          mkdir -p "$TARGET_DIR"
+          cp -a /tmp/text-vs-color-pr28/. "$TARGET_DIR/"
+          git add "$TARGET_DIR"
+          python3 - <<'PY'
+          import subprocess
+          changed = subprocess.check_output(["git", "diff", "--cached", "--name-only"], text=True).splitlines()
+          if not changed:
+              raise SystemExit("no preview changes staged")
+          bad = [p for p in changed if not p.startswith("text-vs-color/preview/pr-28/")]
+          if bad:
+              raise SystemExit(f"staged diff escaped preview subtree: {bad}")
+          print("\n".join(changed))
+          PY
+
+      - name: Publish Pages preview
+        run: |
+          git config user.name "fiverocks-preview-publisher"
+          git config user.email "163599746+fiverocksgames@users.noreply.github.com"
+          git commit -m "preview: text-vs-color#28@$SOURCE_SHA"
+          git push origin HEAD:main
