@@ -3,19 +3,20 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% assign pages = site.pages | sort: "url" %}
-{% for page in pages %}
-  {% unless page.sitemap == false or page.url == "/sitemap.xml" or page.url == "/robots.txt" %}
+  <!-- Explicitly enumerate public entry points: plain HTML pages have no Jekyll front matter
+       and therefore must not depend on site.pages for discovery. -->
+{% assign public_paths = "/" | split: "," %}
+{% assign public_paths = public_paths | push: "/games/math-defender/" | push: "/games/math-fighter/" | push: "/games/math-rain/" | push: "/games/memory-game/" | push: "/games/make-it-max/" | push: "/games/math-defender/en/" | push: "/games/math-defender/journals/" | push: "/games/math-defender/en/journals/" %}
+{% for path in public_paths %}
   <url>
-    <loc>{{ site.url }}{{ page.url | replace: "index.html", "" }}</loc>
+    <loc>{{ site.url }}{{ path }}</loc>
   </url>
-  {% endunless %}
 {% endfor %}
 {% assign journals = site.math_defender_journals | sort: "url" %}
-{% for page in journals %}
-  {% unless page.sitemap == false %}
+{% for journal in journals %}
+  {% unless journal.sitemap == false %}
   <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
+    <loc>{{ site.url }}{{ journal.url | escape_xml }}</loc>
   </url>
   {% endunless %}
 {% endfor %}
