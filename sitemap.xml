@@ -6,18 +6,10 @@ layout: null
   <!-- Explicitly enumerate public entry points: plain HTML pages have no Jekyll front matter
        and therefore must not depend on site.pages for discovery. -->
 {% assign public_paths = "/" | split: "," %}
-{% assign public_paths = public_paths | push: "/games/math-defender/" | push: "/games/math-fighter/" | push: "/games/math-rain/" | push: "/games/memory-game/" | push: "/games/make-it-max/" | push: "/games/math-defender/en/" | push: "/games/math-defender/journals/" | push: "/games/math-defender/en/journals/" %}
+{% assign public_paths = public_paths | push: "/games/math-defender/" | push: "/games/math-defender/en/" | push: "/games/math-fighter/" | push: "/games/math-fighter/en/" | push: "/games/math-rain/" | push: "/games/memory-game/" | push: "/games/make-it-max/" | push: "/math-defender/journals/" | push: "/math-defender/en/journals/" %}
 {% for path in public_paths %}
   <url>
     <loc>{{ site.url }}{{ path }}</loc>
   </url>
-{% endfor %}
-{% assign journals = site.math_defender_journals | sort: "url" %}
-{% for journal in journals %}
-  {% unless journal.sitemap == false %}
-  <url>
-    <loc>{{ site.url }}{{ journal.url | escape_xml }}</loc>
-  </url>
-  {% endunless %}
 {% endfor %}
 </urlset>
