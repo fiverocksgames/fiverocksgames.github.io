@@ -19,10 +19,10 @@
 
 | Game | What it is | Status |
 |---|---|---|
-| **Math Fighter** | 빠른 계산과 전투를 결합한 수학 액션 게임 | 🚧 In Development · Android Demo |
-| **Math Defender** | 문제 풀이로 자원을 얻고 방어 전략을 세우는 수학 전략 게임 | 🚧 In Development |
-| **Math Rain** | 떨어지는 수학 문제를 제한 시간 안에 해결하는 브라우저 게임 | ✅ Playable Prototype |
-| **Memory Game** | 카드 위치를 기억하고 짝을 맞추는 집중력·기억력 게임 | ✅ Playable Prototype |
+| **Math Fighter** | 수학 문제의 정답을 계산하고, 그 답을 달고 내려오는 적을 찾아 직접 격추하는 수학 액션 게임 | 🚧 In Development · Android Demo |
+| **Math Defender** | 수학 문제로 전투 자원을 벌고, 적을 정찰한 뒤 영웅을 선택·배치해 방어전을 치르는 전략 게임 | 🚧 In Development |
+| **Math Rain** | 떨어지는 수학 문제를 계산해 정답 카드를 선택하고, 문제를 지워가며 살아남는 실시간 수학 아케이드 게임 | ✅ Playable Prototype |
+| **Memory Game** | 카드 위치를 기억해 짝을 만들고, 상대보다 더 많은 짝을 확보하는 기억력 대전 게임 | ✅ Playable Prototype |
 
 ### Play & Explore
 
@@ -40,6 +40,9 @@ FiveRocksGames는 **문제집을 게임처럼 꾸미는 것**보다
 
 > We build games children genuinely enjoy, where learning becomes a natural part of play.
 
+홈페이지의 게임 설명은 먼저 **플레이어가 실제로 무엇을 보고, 선택하고, 움직이는지**를 설명합니다.  
+학습 의도나 디자인 목표는 실제 플레이 설명과 구분하며, 구현되지 않은 계획을 현재 기능처럼 소개하지 않습니다.
+
 현재 공개된 빌드는 완성품보다는 실제 플레이를 통해 방향을 검증하고 개선하는 **데모와 프로토타입**에 가깝습니다.
 
 ### Design Principles
@@ -56,7 +59,7 @@ FiveRocksGames는 **문제집을 게임처럼 꾸미는 것**보다
 
 ### Math Fighter
 
-빠른 계산과 전투 감각을 하나의 흐름으로 연결하는 모바일 수학 액션 게임입니다.
+수학 문제를 계산한 뒤, 서로 다른 답을 달고 내려오는 적 중 정답을 찾아 직접 격추하는 모바일 수학 액션 게임입니다.
 
 현재는:
 
@@ -68,10 +71,9 @@ FiveRocksGames는 **문제집을 게임처럼 꾸미는 것**보다
 
 ### Math Defender
 
-**문제 풀이 → 정찰 → 방어**로 이어지는 전략 루프를 만들고 있습니다.
+**문제 풀이 → 정찰 → 준비 → 방어전**으로 이어지는 전략 루프를 만들고 있습니다.
 
-수학 문제를 푸는 행위가 단순한 퀴즈가 아니라  
-다음 전략을 실행하기 위한 **자원 획득 과정**이 되도록 설계하는 것이 핵심입니다.
+수학 문제를 풀면 전투 준비 자원을 얻고, 적의 구성과 특징을 확인한 뒤, 가진 자원 안에서 어떤 영웅을 선택·배치할지 결정합니다. 수학 결과가 곧바로 공격력이 되는 대신 **전략 선택지**로 이어지는 구조가 핵심입니다.
 
 [Math Defender 프로젝트 보기](https://fiverocksgames.github.io/games/math-defender/) · [개발 일지 읽기](https://fiverocksgames.github.io/math-defender/journals/)
 
